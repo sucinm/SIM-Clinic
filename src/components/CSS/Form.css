@@ -1,15 +1,36 @@
-.form-style-3 {
-  width: 66em;
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+}
+.item3 {
+  grid-area: item3;
+}
+
+.form-style .grid-container {
+  display: grid;
+  grid-template-areas:
+    "item1 item2"
+    "item1 item3";
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.form-style {
+  width: 70%;
+  float: right;
+  text-align: justify;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   margin: 0px auto;
   padding: 20px;
   border: 1px solid #ccc4c4;
 }
-.form-style-3 label {
+.form-style label {
   display: block;
   margin-bottom: 10px;
 }
-.form-style-3 label > span {
+.form-style label > span {
   float: left;
   width: 200px;
   color: #369a7e;
@@ -17,7 +38,8 @@
   font-weight: normal;
   text-shadow: 1px 1px 1px #ffffff;
 }
-.form-style-3 fieldset {
+.form-style fieldset {
+  width: 28em;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -26,7 +48,7 @@
   padding: 20px;
   background: #ffffff;
 }
-.form-style-3 fieldset legend {
+.form-style fieldset legend {
   color: #ffffff;
   border-top: 1px solid #ccc4c4;
   border-left: 1px solid #ccc4c4;
@@ -42,13 +64,13 @@
   font-weight: bold;
   font-size: 13px;
 }
-.form-style-3 textarea {
+.form-style textarea {
   width: 250px;
   height: 100px;
 }
-.form-style-3 input,
-.form-style-3 select,
-.form-style-3 textarea {
+.form-style input[type="text"],
+.form-style select,
+.form-style textarea {
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -59,11 +81,14 @@
   background: #ffffff;
   width: 50%;
 }
-.form-style-3 input[type="submit"],
-.form-style-3 input[type="button"] {
+.form-style input[type="submit"],
+.form-style input[type="button"] {
   background: #369a7e;
+  padding: 10px;
+  margin: 1em;
+  width: 33em;
+  float: left;
   border: 1px solid #ccc4c4;
-  padding: 5px 15px 5px 15px;
   color: #ffffff;
   box-shadow: inset -1px -1px 3px #ccc4c4;
   -moz-box-shadow: inset -1px -1px 3px #ccc4c4;

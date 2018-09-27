@@ -4,11 +4,11 @@ import "../../CSS/Form.css";
 class Dashboard extends Component {
   render() {
     return (
-      <div class="form-style-3">
+      <div class="form-style">
         <h3>Pendaftaran Pasien</h3>
         <form>
-          <div className="row">
-            <fieldset>
+          <div class="grid-container">
+            <fieldset class="item1">
               <legend>Data Diri</legend>
               <label for="no_ktp">
                 <span>
@@ -20,7 +20,7 @@ class Dashboard extends Component {
                 <span>
                   Nama <span class="required">*</span>
                 </span>
-                <input type="email" class="form-control" name="nama_pasien" />
+                <input type="text" class="form-control" name="nama_pasien" />
               </label>
               <label for="tempat_lahir">
                 <span>
@@ -85,7 +85,7 @@ class Dashboard extends Component {
               </label>
             </fieldset>
             <div>
-              <fieldset>
+              <fieldset class="item2">
                 <legend>Pendidikan</legend>
                 <label for="pendidikan">
                   <span>Pendidikan</span>
@@ -102,8 +102,7 @@ class Dashboard extends Component {
                   <textarea name="nama_perusahaan" class="textarea-field" />
                 </label>
               </fieldset>
-              <br />
-              <fieldset>
+              <fieldset class="item3">
                 <legend>Penanggung Jawab</legend>
                 <label for="nama_penanggungjawab">
                   <span>Nama</span>
@@ -139,11 +138,10 @@ class Dashboard extends Component {
                   />
                 </label>
               </fieldset>
+              <label>
+                <input type="submit" value="Simpan" />
+              </label>
             </div>
-            <label>
-              <span>&nbsp;</span>
-              <input type="submit" value="Simpan" />
-            </label>
           </div>
         </form>
       </div>
