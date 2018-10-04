@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "nama_pasien": "Suci Nascaisar Maharani",
+    "tanggal": "20 Januari 2018",
+    "jam": "15:30:02",
+    "poliklinik": "Umum"
+  },
+  {
+    "id": "2",
+    "nama_pasien": "Budi Utama",
+    "tanggal": "20 Januari 2018",
+    "jam": "15:30:04",
+    "poliklinik": "Gigi"
+  },
+  {
+    "id": "3",
+    "nama_pasien": "Maharani",
+    "tanggal": "20 Januari 2018",
+    "jam": "15:40:22",
+    "poliklinik": "Umum"
+  }
+]

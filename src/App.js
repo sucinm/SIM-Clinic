@@ -1,26 +1,24 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Link, Route } from "react-router-dom";
-import Header from "./components/JSX/FrontDesk/Header";
-import Beranda from "./components/JSX/FrontDesk/Dashboard";
-import Laporan from "./components/JSX/FrontDesk/Laporan";
+import { Route } from "react-router-dom";
+import Header from "./components/FrontDesk/Header";
+import Beranda from "./views/FrontDesk/Dashboard";
+import TambahPasien from "./views/FrontDesk/TambahPasien";
+import TambahAntrian from "./views/FrontDesk/TambahAntrian";
+import PelayananMedis from "./views/PelayananMedis/Dashboard";
+import TambahLayanan from "./views/PelayananMedis/TambahLayanan";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header />
-        <ul>
-          <li>
-            <Link to="/beranda">Beranda</Link>
-          </li>
-          <li>
-            <Link to="/laporan">Laporan</Link>
-          </li>
-        </ul>
-        <div>
+        <div style={{ marginTop: "30px" }}>
           <Route path="/beranda" component={Beranda} />
-          <Route path="/laporan" component={Laporan} />
+          <Route path="/tambah-pasien" component={TambahPasien} />
+          <Route path="/tambah-antrian" component={TambahAntrian} />
+          <Route path="/pelayanan-medis" component={PelayananMedis} />
+          <Route path="/tambah-layanan" component={TambahLayanan} />
         </div>
       </div>
     );

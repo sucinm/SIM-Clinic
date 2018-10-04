@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-class Header extends Component {
+
+class Laporan extends Component {
   render() {
     return (
       <div>
-        <h1>Menu</h1>
+        <h1>Laporan</h1>
       </div>
     );
   }
 }
-export default Header;
+
+export default Laporan;
