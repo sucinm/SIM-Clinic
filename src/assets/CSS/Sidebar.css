@@ -1,0 +1,8 @@
+.styleSidebar {
+  border: 1 solid blueviolet;
+  background-color: aquamarine;
+  width: 300px;
+  height: 1000px;
+  float: left;
+  margin-right: 30px;
+}

@@ -46,6 +46,12 @@ class Header extends Component {
               <li>
                 <Link to="/pelayanan-medis">Pelayanan Medis</Link>
               </li>
+              <li>
+                <Link to="/apotek">Apotek</Link>
+              </li>
+              {/* <li>
+                <Link to="/kasir">Kasir</Link>
+              </li> */}
             </ul>
           </div>
         </div>

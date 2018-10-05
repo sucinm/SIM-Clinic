@@ -25,13 +25,13 @@ class TambahPasien extends Component {
               <div className="col-sm-6">
                 <fieldset className="item1">
                   <legend>Data Diri</legend>
-                  <label for="no_ktp">
+                  <label>
                     <span>
                       No KTP <span className="required">*</span>
                     </span>
                     <input type="text" className="form-control" name="no_ktp" />
                   </label>
-                  <label for="nama_pasien">
+                  <label>
                     <span>
                       Nama <span className="required">*</span>
                     </span>
@@ -41,7 +41,7 @@ class TambahPasien extends Component {
                       name="nama_pasien"
                     />
                   </label>
-                  <label for="tempat_lahir">
+                  <label>
                     <span>
                       Tempat Lahir <span className="required">*</span>
                     </span>
@@ -51,7 +51,7 @@ class TambahPasien extends Component {
                       name="tempat_lahir"
                     />
                   </label>
-                  <label for="agama">
+                  <label>
                     <span>Agama</span>
                     <select name="agama" className="form-control">
                       <option value="Islam">Islam</option>
@@ -60,51 +60,50 @@ class TambahPasien extends Component {
                       <option value="Hindu">Hindu</option>
                     </select>
                   </label>
-                  <label for="jenis_kelamin">
+                  <label>
                     <span>Jenis Kelamin</span>
                     <select name="jenis_kelamin" className="form-control">
                       <option value="P">Perempuan</option>
                       <option value="L">Laki-laki</option>
                     </select>
                   </label>
-                  <label for="status">
+                  <label>
                     <span>Status</span>
                     <select name="status" className="form-control">
                       <option value="Belum Menikah">Belum Menikah</option>
                       <option value="Sudah Menikah">Sudah Menikah</option>
                     </select>
                   </label>
-                  <label for="alamat">
+                  <label>
                     <span>
                       Alamat <span className="required">*</span>
                     </span>
                     <textarea name="alamat" className="form-control" />
                   </label>
-                  <label for="provinsi">
+                  <label>
                     <span>Provinsi</span>
                     <select
                       name="provinsi"
                       className="form-control"
-                      onkeyup="filterFunction()"
                     >
                       {this.daftarProvinsi()}
                     </select>
                   </label>
-                  <label for="kecamatan">
+                  <label>
                     <span>Kecamatan</span>
                     <select name="kecamatan" className="form-control">
                       <option value="Sail">Sail</option>
                       <option value="Rumbai">Rumbai</option>
                     </select>
                   </label>
-                  <label for="kelurahan">
+                  <label>
                     <span>Kelurahan</span>
                     <select name="kelurahan" className="form-control">
                       <option value="Tenayan Raya">Tenayan Raya</option>
                       <option value="...">...</option>
                     </select>
                   </label>
-                  <label for="kode_pos">
+                  <label>
                     <span>
                       Kode Pos <span className="required">*</span>
                     </span>
@@ -114,7 +113,7 @@ class TambahPasien extends Component {
                       name="kode_pos"
                     />
                   </label>
-                  <label for="telpon">
+                  <label>
                     <span>
                       Telpon <span className="required">*</span>
                     </span>
@@ -126,7 +125,7 @@ class TambahPasien extends Component {
               <div className="col-sm-6">
                 <fieldset className="item2">
                   <legend>Pendidikan</legend>
-                  <label for="pendidikan">
+                  <label>
                     <span>Pendidikan</span>
                     <input
                       type="text"
@@ -134,11 +133,11 @@ class TambahPasien extends Component {
                       name="pendidikan"
                     />
                   </label>
-                  <label for="kantor">
+                  <label>
                     <span>Kantor</span>
                     <input type="text" className="form-control" name="kantor" />
                   </label>
-                  <label for="nama_perusahaan">
+                  <label>
                     <span>
                       <span>Nama Perusahaan </span>
                     </span>
@@ -149,7 +148,7 @@ class TambahPasien extends Component {
 
                 <fieldset className="item3">
                   <legend>Penanggung Jawab</legend>
-                  <label for="nama_penanggungjawab">
+                  <label>
                     <span>Nama</span>
                     <input
                       type="text"
@@ -157,7 +156,7 @@ class TambahPasien extends Component {
                       name="nama_penanggungjawab"
                     />
                   </label>
-                  <label for="alamat_penanggungjawab">
+                  <label>
                     <span>
                       <span>Alamat </span>
                     </span>
@@ -166,7 +165,7 @@ class TambahPasien extends Component {
                       className="form-control"
                     />
                   </label>
-                  <label for="telpon_penanggungjawab">
+                  <label>
                     <span>Telpon</span>
                     <input
                       type="text"
@@ -174,7 +173,7 @@ class TambahPasien extends Component {
                       name="telpon_penanggungjawab"
                     />
                   </label>
-                  <label for="status_penanggungjawab">
+                  <label>
                     <span>Status</span>
                     <input
                       type="text"

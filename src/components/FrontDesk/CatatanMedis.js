@@ -5,7 +5,7 @@ class CatatanMedis extends Component {
   render() {
     return (
       <div className="form-style">
-        <label for="tanggal_valid">
+        <label>
           <input type="date" name="tanggal" className="form-control" />
         </label>
         <Link to="">

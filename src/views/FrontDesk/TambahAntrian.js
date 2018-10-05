@@ -32,29 +32,7 @@ class TambahAntrian extends Component {
                   <legend>Data Pasien</legend>
 
                   <div className="row">
-                    <div className="col-sm-12">
-                      {/* <table>
-                        <tr>
-                          <td>Nomor MR</td>
-                          <td>: 1212112121</td>
-                          <td rowSpan="3">
-                            <img
-                              src={Gender}
-                              alt="Icon Patient"
-                              style={{ width: "5em", margin: "0 auto" }}
-                            />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Nama</td>
-                          <td>: Budi Setiawan Nugroho</td>
-                        </tr>
-                        <tr>
-                          <td>Tanggal Lahir</td>
-                          <td>: 10 Mei 1987</td>
-                        </tr>
-                      </table> */}
-                    </div>
+                    <div className="col-sm-12" />
                   </div>
                   <div className="row">
                     <div className="col-sm-6">

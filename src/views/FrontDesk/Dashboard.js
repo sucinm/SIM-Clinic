@@ -42,17 +42,6 @@ class Dashboard extends Component {
             </table>
           </div>
           <br />
-          <div className="row">
-            <div className="col-sm-4">
-              <p>1</p>
-            </div>
-            <div className="col-sm-4">
-              <p>2</p>
-            </div>
-            <div className="col-sm-4">
-              <p>3</p>
-            </div>
-          </div>
         </div>
       </div>
     );
