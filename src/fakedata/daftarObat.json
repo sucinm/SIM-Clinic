@@ -1,40 +1,32 @@
 [
   {
-    "id": "1",
+    "id": "0",
     "nama": "Abbocath 18",
+    "kategori": "Minum",
     "persediaan": "10",
     "satuan": "pcs",
-    "harga": "14950",
+    "harga_beli": "10950",
+    "harga_jual": "13950",
+    "masa_berlaku": "29 Januari 2019"
+  },
+  {
+    "id": "1",
+    "nama": "Abbocath 20",
+    "kategori": "Minum",
+    "persediaan": "10",
+    "satuan": "pcs",
+    "harga_beli": "11950",
+    "harga_jual": "14950",
     "masa_berlaku": "29 Januari 2019"
   },
   {
     "id": "2",
-    "nama": "Abbocath 20",
-    "persediaan": "10",
-    "satuan": "pcs",
-    "harga": "14950",
-    "masa_berlaku": "29 Januari 2019"
-  },
-  {
-    "id": "3",
     "nama": "Asolute",
+    "kategori": "Minum",
     "persediaan": "10",
     "satuan": "pcs",
-    "harga": "14400",
+    "harga_beli": "14950",
+    "harga_jual": "16950",
     "masa_berlaku": "2 Februari 2019"
-  },
-  {
-    "id": "4",
-    "nama": "Aceton 60 ml",
-    "satuan": "botol",
-    "harga": "6750",
-    "masa_berlaku": "9 Maret 2019"
-  },
-  {
-    "id": "5",
-    "nama": "Acifar CR 5 gr",
-    "satuan": "tube",
-    "harga": "6400",
-    "masa_berlaku": "9 Maret 2019"
   }
 ]

@@ -1,0 +1,22 @@
+[
+  {
+    "id_item": "1",
+    "item_transaksi": "Darah Lengkap (Hb, Leu, Eri, Th, Ht, Diff)",
+    "tarif": "48000"
+  },
+  {
+    "id_item": "2",
+    "item_transaksi": "Led",
+    "tarif": "8000"
+  },
+  {
+    "id_item": "3",
+    "item_transaksi": "Spuit",
+    "tarif": "8000"
+  },
+  {
+    "id_item": "4",
+    "item_transaksi": "Nadle",
+    "tarif": "1200"
+  }
+]

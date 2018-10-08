@@ -13,8 +13,10 @@ class Dashboard extends Component {
         </div>
         <nav className="navbar">Daftar Obat</nav>
         <div className="form-style">
-          <TambahObat />
-          <DaftarObat />
+          <div className="row">
+            <TambahObat />
+            <DaftarObat />
+          </div>
         </div>
       </div>
     );

@@ -27,13 +27,9 @@ class TambahAntrian extends Component {
         <div className="form-style">
           <form>
             <div className="row">
-              <div className="col-sm-6">
+              <div className="col-md-6">
                 <fieldset className="item1">
                   <legend>Data Pasien</legend>
-
-                  <div className="row">
-                    <div className="col-sm-12" />
-                  </div>
                   <div className="row">
                     <div className="col-sm-6">
                       <Link to="/tambah-antrian/data-diri">
@@ -64,31 +60,32 @@ class TambahAntrian extends Component {
               <div className="col-md-6">
                 <fieldset className="item2">
                   <legend>Tambah Antrian Pasien</legend>
-
-                  <label for="jenis_pasien">
+                  <label>
                     <span>
                       Jenis Pasien
                       <span className="required">*</span>
                     </span>
                     <br />
-                    <input
-                      defaultChecked
-                      type="radio"
-                      value="Umum"
-                      name="jenis"
-                      onClick={() => this.showHide(false)}
-                    />
-                    Umum
-                    <br />
-                    <input
-                      type="radio"
-                      value="Asuransi"
-                      name="jenis"
-                      onClick={() => this.showHide(true)}
-                    />
-                    Asuransi
+                    <select name="jenis_pasien" className="form-control">
+                      <option value="1" onClick={() => this.showHide(false)}>
+                        Umum
+                      </option>
+                      <option value="2" onClick={() => this.showHide(true)}>
+                        Asuransi / Jaminan
+                      </option>
+                    </select>
                   </label>
-                  <label for="nama_petugas">
+
+                  <label>
+                    <span>
+                      Layanan Medis <span className="required">*</span>
+                    </span>
+                    <select name="layanan_medis" className="form-control">
+                      <option value="1">Rawat Jalan</option>
+                      <option value="2">Laboratorium</option>
+                    </select>
+                  </label>
+                  <label>
                     <span>
                       Nama Petugas
                       <span className="required">*</span>
@@ -98,7 +95,7 @@ class TambahAntrian extends Component {
                       <option value="Ery">Ery</option>
                     </select>
                   </label>
-                  <label for="nama_dokter">
+                  <label>
                     <span>
                       Nama Dokter
                       <span className="required">*</span>
@@ -112,7 +109,7 @@ class TambahAntrian extends Component {
                       </option>
                     </select>
                   </label>
-                  <label for="poliklinik">
+                  <label>
                     <span>
                       Poliklinik
                       <span className="required">*</span>
@@ -122,7 +119,7 @@ class TambahAntrian extends Component {
                       <option value="Gigi">Gigi</option>
                     </select>
                   </label>
-                  <label for="tanggal">
+                  <label>
                     <span>
                       Tanggal <span className="required">*</span>
                     </span>
@@ -136,26 +133,11 @@ class TambahAntrian extends Component {
                 <br />
                 {this.state.showMe ? (
                   <fieldset className="item3">
-                    <legend>Asuransi</legend>
-                    <label for="kode_asuransi">
+                    <legend>Asuransi / Jaminan</legend>
+
+                    <label>
                       <span>
-                        Kode Asuransi <span className="required">*</span>
-                      </span>
-                      <input
-                        type="text"
-                        name="kode_ansuransi"
-                        className="form-control"
-                      />
-                    </label>
-                    <label for="sub">
-                      <span>
-                        Sub <span className="required">*</span>
-                      </span>
-                      <input type="text" name="sub" className="form-control" />
-                    </label>
-                    <label for="kelas">
-                      <span>
-                        kelas <span className="required">*</span>
+                        Kelas <span className="required">*</span>
                       </span>
                       <input
                         type="text"
@@ -163,7 +145,7 @@ class TambahAntrian extends Component {
                         className="form-control"
                       />
                     </label>
-                    <label for="faskes">
+                    <label>
                       <span>
                         Faskes
                         <span className="required">*</span>
@@ -174,7 +156,7 @@ class TambahAntrian extends Component {
                         className="form-control"
                       />
                     </label>
-                    <label for="no_kartu">
+                    <label>
                       <span>
                         Nomor Kartu <span className="required">*</span>
                       </span>
@@ -184,7 +166,7 @@ class TambahAntrian extends Component {
                         className="form-control"
                       />
                     </label>
-                    <label for="tanggal_valid">
+                    <label>
                       <span>
                         Tanggal Valid
                         <span className="required">*</span>
