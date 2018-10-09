@@ -3,51 +3,38 @@ import React, { Component } from "react";
 class TambahObat extends Component {
   render() {
     return (
-      <div className="col-md-6">
+      <div className="col-md-12">
         <fieldset>
-          <legend>Tambah Daftar Obat</legend>
+          <legend>Tambah Karyawan Baru</legend>
           <label>
             <span>
-              Nama Obat <span className="required">*</span>
+              Nama Karyawan <span className="required">*</span>
             </span>
             <input type="text" className="form-control" name="nama_obat" />
           </label>
           <label>
             <span>
-              keterangan <span className="required">*</span>
+              NIK <span className="required">*</span>
             </span>
-            <select name="keterangan_obat">
-              <option value="Minum">Minum</option>
-              <option value="Makan">Makan</option>
+            <input type="text" className="form-control" name="nik" />
+          </label>
+          <label>
+            <span>
+              Peran <span className="required">*</span>
+            </span>
+            <select name="peran">
+              <option value="1">Perawat</option>
+              <option value="2">Dokter</option>
             </select>
           </label>
           <label>
             <span>
-              Jumlah Persediaan <span className="required">*</span>
+              Poliklinik <span className="required">*</span>
             </span>
-            <input type="text" className="form-control" name="stok_obat" />
-            <select name="satuan_obat">
-              <option value="pcs">pcs</option>
-              <option value="botol">botol</option>
+            <select name="peran">
+              <option value="1">Umum</option>
+              <option value="2">Gigi</option>
             </select>
-          </label>
-          <label>
-            <span>
-              Masa Berlaku <span className="required">*</span>
-            </span>
-            <input type="date" className="form-control" name="masa_berlaku" />
-          </label>
-          <label>
-            <span>
-              Harga Beli <span className="required">*</span>
-            </span>
-            <input type="text" className="form-control" name="harga_beli" />
-          </label>
-          <label>
-            <span>
-              Harga Jual <span className="required">*</span>
-            </span>
-            <input type="text" className="form-control" name="harga_jual" />
           </label>
         </fieldset>
         <br />

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class TambahObat extends Component {
   render() {
     return (
-      <div className="col-md-6">
+      <div className="col-md-12">
         <fieldset>
           <legend>Tambah Daftar Obat</legend>
           <label>
