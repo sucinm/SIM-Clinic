@@ -18,7 +18,7 @@ class Dashboard extends Component {
             Poliklinik <strong>{el.poliklinik}</strong>
           </span>
 
-          <Link to="/resep-obat">
+          <Link to="/detail-pembayaran">
             <button
               type="button"
               className="btn btn-info btn-sm"
@@ -36,13 +36,13 @@ class Dashboard extends Component {
     return (
       <div className="container">
         <div className="alert alert-warning">
-          Untuk <strong> melihat daftar pengambilan obat pasien</strong> , klik
-          nomor antrian pasien.
+          Untuk <strong>melihat pembayaran pelayanan medis pada pasien</strong>,
+          klik nomor antrian pasien.
         </div>
         <div className="row">
           <div className="col-md-12 col-lg-12">
             <div id="tracking">
-              <nav className="navbar">Daftar Antrian Apotek</nav>
+              <nav className="navbar">Daftar Antrian Pembayaran</nav>
               <div className="tracking-list">{this.cetakList()}</div>
             </div>
           </div>

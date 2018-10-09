@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import "../../assets/CSS/Form.css";
 import SOAP from "../../components/PelayananMedis/TambahSoap";
 import ResepObat from "../../components/PelayananMedis/TambahResepObat";
 import Tindakan from "../../components/PelayananMedis/TambahTindakan";
@@ -11,8 +9,9 @@ class TambahLayanan extends Component {
     return (
       <div className="container">
         <div className="alert alert-warning">
-          Untuk <strong>menambahkan data pasien baru</strong>, lengkapi form dan
-          klik <strong>"Simpan"</strong>.
+          Untuk
+          <strong> menambahkan catatan medis pasien</strong>, lengkapi form dan
+          klik "Simpan".
         </div>
 
         <nav className="navbar">Pelayanan Medis</nav>
@@ -25,12 +24,10 @@ class TambahLayanan extends Component {
                 <Tindakan />
                 <Laboratorium />
               </div>
-              <label style={{ margin: "10px auto", float: "right" }}>
-                <Link to="/tambah-antrian/data-diri">
-                  <button type="button" className="btn btn-info btn-sm">
-                    Simpan
-                  </button>
-                </Link>
+              <label style={{ margin: "10px auto" }}>
+                <button type="button" className="btn btn-info btn-sm">
+                  Simpan
+                </button>
               </label>
             </div>
             <br />

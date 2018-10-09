@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "../../assets/CSS/Form.css";
 import provinsi from "../../fakedata/daftarProvinsi";
 
 class TambahPasien extends Component {
@@ -16,7 +15,7 @@ class TambahPasien extends Component {
       <div className="container">
         <div className="alert alert-warning">
           Untuk <strong>menambahkan data pasien baru</strong>, lengkapi form dan
-          klik <strong>"Simpan"</strong>.
+          klik "Simpan".
         </div>
         <nav className="navbar">Pendaftaran Pasien Baru</nav>
         <div className="form-style">

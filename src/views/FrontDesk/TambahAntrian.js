@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../../assets/CSS/Form.css";
 import DetailPasien from "../../components/FrontDesk/DetailPasien";
 
 class TambahAntrian extends Component {
@@ -19,7 +18,7 @@ class TambahAntrian extends Component {
       <div className="container">
         <div className="alert alert-warning">
           Untuk <strong>menambahkan antrian pelayanan medis</strong>, lengkapi
-          form dan klik <strong>"Tambah Antrian"</strong>.
+          form dan klik "Tambah Antrian".
         </div>
         <nav className="navbar">Tambah Antrian Pelayanan Medis</nav>
         <div className="form-style">

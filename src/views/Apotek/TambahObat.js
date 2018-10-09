@@ -9,7 +9,7 @@ class TambahObat extends Component {
       <div className="container">
         <div className="alert alert-warning">
           Untuk <strong>menambahkan data obat</strong>, lengkapi form dan klik
-          <strong> "Simpan"</strong>.
+          "Simpan".
         </div>
         <nav className="navbar">Daftar Obat</nav>
         <div className="form-style">

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Route } from "react-router-dom";
-import Header from "./components/FrontDesk/Header";
+import Header from "./components/Header";
+import "./assets/CSS/Form.css";
 // import Sidebar from "./components/FrontDesk/Sidebar";
 import Beranda from "./views/FrontDesk/Dashboard";
 import TambahPasien from "./views/FrontDesk/TambahPasien";
@@ -10,7 +11,9 @@ import PelayananMedis from "./views/PelayananMedis/Dashboard";
 import TambahLayanan from "./views/PelayananMedis/TambahLayanan";
 import Apotek from "./views/Apotek/Dashboard";
 import RekapObat from "./views/Apotek/RekapObat";
-// import Kasir from "./views/Kasir/Dashboard";
+import Kasir from "./views/Kasir/Dashboard";
+import RekapPembayaran from "./views/Kasir/RekapPembayaran";
+import Admin from "./views/Admin/Dashboard";
 
 class App extends Component {
   render() {
@@ -26,8 +29,9 @@ class App extends Component {
           <Route path="/tambah-layanan" component={TambahLayanan} />
           <Route path="/apotek" component={Apotek} />
           <Route path="/resep-obat" component={RekapObat} />
-
-          {/* <Route path="/kasir" component={Kasir} /> */}
+          <Route path="/kasir" component={Kasir} />
+          <Route path="/detail-pembayaran" component={RekapPembayaran} />
+          <Route path="/admin" component={Admin} />
         </div>
       </div>
     );

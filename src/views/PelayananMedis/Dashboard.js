@@ -36,8 +36,8 @@ class Dashboard extends Component {
     return (
       <div className="container">
         <div className="alert alert-warning">
-          Untuk <strong>mengisi catatan medis pasien</strong> , klik
-          <strong> nomor antrian pasien</strong>.
+          Untuk <strong>mengisi catatan medis pasien</strong> , klik nomor
+          antrian pasien.
         </div>
         <div className="row">
           <div className="col-md-12 col-lg-12">

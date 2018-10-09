@@ -23,8 +23,11 @@ class DetailPasien extends Component {
           </div>
           <div className="overflowModel">
             <div className="col-md-12">
-              <Route path="?/data-diri" component={DataDiri} />
-              <Route path="?/catatan-medis" component={CatatanMedis} />
+              <Route path="/tambah-antrian/data-diri" component={DataDiri} />
+              <Route
+                path="/tambah-antrian/catatan-medis"
+                component={CatatanMedis}
+              />
             </div>
           </div>
         </fieldset>

@@ -49,9 +49,12 @@ class Header extends Component {
               <li>
                 <Link to="/apotek">Apotek</Link>
               </li>
-              {/* <li>
+              <li>
                 <Link to="/kasir">Kasir</Link>
-              </li> */}
+              </li>
+              <li>
+                <Link to="/admin">Admin</Link>
+              </li>
             </ul>
           </div>
         </div>

@@ -8,9 +8,8 @@ class RekapObat extends Component {
     return (
       <div className="container">
         <div className="alert alert-warning">
-          Untuk <strong>melihat data pasien</strong> atau
-          <strong> menambahkan pasien ke dalam antrian</strong>, klik
-          <strong> nama pasien pada tabel</strong>.
+          Untuk <strong>menyelesaikan transaksi obat pasien</strong>, klik
+          "Selesai".
         </div>
         <nav className="navbar">Resep Obat</nav>
         <div className="form-style">
@@ -18,11 +17,6 @@ class RekapObat extends Component {
             <div className="row">
               <DetailPasien />
               <ResepObat />
-              <label style={{ marginTop: "5px", float: "right" }}>
-                <button type="button" className="btn btn-info btn-sm">
-                  Simpan
-                </button>
-              </label>
             </div>
           </form>
         </div>
