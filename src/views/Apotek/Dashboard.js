@@ -1,21 +1,50 @@
 import React, { Component } from "react";
-import "../../assets/CSS/Form.css";
-import TambahObat from "../../components/Apotek/TambahObat";
-import DaftarObat from "../../components/Apotek/DaftarObat";
+import { Link } from "react-router-dom";
+import listdata from "../../fakedata/pelayananMedis.json";
+import "../../assets/CSS/Timeline.css";
 
 class Dashboard extends Component {
+  cetakList() {
+    return listdata.map((el, index) => (
+      <div className="tracking-item" key={index}>
+        <div className="tracking-icon status-outfordelivery">{el.id}</div>
+        <div className="tracking-date">
+          {el.tanggal}
+          <span>08:58</span>
+        </div>
+        <div className="tracking-content">
+          <span>{el.nama_pasien}</span>
+          <span>
+            Poliklinik <strong>{el.poliklinik}</strong>
+          </span>
+
+          <Link to="/resep-obat">
+            <button
+              type="button"
+              className="btn btn-info btn-sm"
+              style={{ marginBottom: "0.5rem" }}
+            >
+              Layani Pasien
+            </button>
+          </Link>
+        </div>
+      </div>
+    ));
+  }
+
   render() {
     return (
       <div className="container">
         <div className="alert alert-warning">
-          Untuk <strong>menambahkan data obat</strong>, lengkapi form dan klik
-          <strong> "Simpan"</strong>.
+          Untuk melihat <strong>daftar pengambilan obat pasien</strong> , klik
+          <strong> nomor antrian pasien</strong>.
         </div>
-        <nav className="navbar">Daftar Obat</nav>
-        <div className="form-style">
-          <div className="row">
-            <TambahObat />
-            <DaftarObat />
+        <div className="row">
+          <div className="col-md-12 col-lg-12">
+            <div id="tracking">
+              <nav className="navbar">Daftar Antrian Apotek</nav>
+              <div className="tracking-list">{this.cetakList()}</div>
+            </div>
           </div>
         </div>
       </div>

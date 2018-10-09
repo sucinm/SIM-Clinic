@@ -40,7 +40,7 @@ class TambahSoap extends Component {
   }
   daftarICD() {
     return ICDcode.map((el, index) => (
-      <option value={el.code} key={index}>
+      <option value={el.description} key={index}>
         {el.description}
       </option>
     ));
@@ -129,7 +129,7 @@ class TambahSoap extends Component {
                       selector: event.target.value
                     })
                   }
-                  ref="nama"
+                  ref="diagnosa"
                   className="form-control"
                 >
                   <option disabled>---ICD Code---</option>

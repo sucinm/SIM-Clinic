@@ -25,20 +25,15 @@ class TambahLayanan extends Component {
                 <Tindakan />
                 <Laboratorium />
               </div>
+              <label style={{ margin: "10px auto", float: "right" }}>
+                <Link to="/tambah-antrian/data-diri">
+                  <button type="button" className="btn btn-info btn-sm">
+                    Simpan
+                  </button>
+                </Link>
+              </label>
             </div>
             <br />
-            {/* <div className="row">
-              <Tindakan />
-              <Laboratorium />
-            </div> */}
-
-            <label style={{ margin: "10px auto", float: "right" }}>
-              <Link to="/tambah-antrian/data-diri">
-                <button type="button" className="btn btn-info btn-sm">
-                  Simpan
-                </button>
-              </Link>
-            </label>
           </form>
         </div>
       </div>

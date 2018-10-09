@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import { Link, Route } from "react-router-dom";
 import "../../assets/CSS/Form.css";
-import DataDiri from "../../components/FrontDesk/DataDiri";
-import CatatanMedis from "../../components/FrontDesk/CatatanMedis";
+import DetailPasien from "../../components/FrontDesk/DetailPasien";
 
 class TambahAntrian extends Component {
   constructor() {
@@ -27,36 +25,7 @@ class TambahAntrian extends Component {
         <div className="form-style">
           <form>
             <div className="row">
-              <div className="col-md-6">
-                <fieldset className="item1">
-                  <legend>Data Pasien</legend>
-                  <div className="row">
-                    <div className="col-sm-6">
-                      <Link to="/tambah-antrian/data-diri">
-                        <legend>Data Diri</legend>
-                      </Link>
-                    </div>
-                    <div className="col-sm-6">
-                      <Link to="/tambah-antrian/catatan-medis">
-                        <legend>Catatan Medis</legend>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="overflowModel">
-                    <div className="col-md-12">
-                      <Route
-                        path="/tambah-antrian/data-diri"
-                        component={DataDiri}
-                      />
-                      <Route
-                        path="/tambah-antrian/catatan-medis"
-                        component={CatatanMedis}
-                      />
-                    </div>
-                  </div>
-                </fieldset>
-                <br />
-              </div>
+              <DetailPasien />
               <div className="col-md-6">
                 <fieldset className="item2">
                   <legend>Tambah Antrian Pasien</legend>

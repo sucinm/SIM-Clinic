@@ -9,6 +9,7 @@ import TambahAntrian from "./views/FrontDesk/TambahAntrian";
 import PelayananMedis from "./views/PelayananMedis/Dashboard";
 import TambahLayanan from "./views/PelayananMedis/TambahLayanan";
 import Apotek from "./views/Apotek/Dashboard";
+import RekapObat from "./views/Apotek/RekapObat";
 // import Kasir from "./views/Kasir/Dashboard";
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
           <Route path="/pelayanan-medis" component={PelayananMedis} />
           <Route path="/tambah-layanan" component={TambahLayanan} />
           <Route path="/apotek" component={Apotek} />
+          <Route path="/resep-obat" component={RekapObat} />
 
           {/* <Route path="/kasir" component={Kasir} /> */}
         </div>
