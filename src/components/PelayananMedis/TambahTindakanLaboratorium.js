@@ -49,7 +49,7 @@ class TambahTindakanLaboratorium extends Component {
   }
   daftarItemLab() {
     return tindakanLaboratorium.map((el, index) => (
-      <option value={el.id_item} key={index}>
+      <option value={el.item_transaksi} key={index}>
         {el.item_transaksi}
         ---Rp.
         {el.tarif}
@@ -106,6 +106,7 @@ class TambahTindakanLaboratorium extends Component {
               {this.doTindakanLaboratorium()}
             </table>
           </div>
+          <a>Hasil Lab</a>
         </fieldset>
         <br />
       </div>
