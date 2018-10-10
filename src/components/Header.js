@@ -55,6 +55,7 @@ class Header extends Component {
               <li>
                 <Link to="/admin">Admin</Link>
               </li>
+              <li>Super Admin</li>
             </ul>
           </div>
         </div>

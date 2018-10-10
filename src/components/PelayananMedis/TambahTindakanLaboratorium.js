@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import tindakanLaboratorium from "../../fakedata/daftarItemLab";
 import IconPlus from "../../assets/imgs/plus.png";
 import IconTrash from "../../assets/imgs/trash.png";
@@ -106,7 +107,7 @@ class TambahTindakanLaboratorium extends Component {
               {this.doTindakanLaboratorium()}
             </table>
           </div>
-          <a>Hasil Lab</a>
+          <Link to="/hasil-laboratorium">Hasil Laboratorium</Link>
         </fieldset>
         <br />
       </div>
